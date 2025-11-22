@@ -14,10 +14,19 @@
    
 //})
 //import morgan from 'morgan'
-import express from 'express'
-import {handleUsers} from './controller/userController.js';
-const app = express();
- app.set('view engine','ejs')
-app.set('views','./view')
-app.get('/users',handleUsers)
-app.listen((3200));
+import express from'express'
+import userData from './user.json' with {type:'json'}
+const app=express();
+app.get('/',(req,resp)=>{
+    console.log(userData);
+    resp.send("user List API")
+
+}
+)
+app.get('/user/:id',(req,resp)=>{
+    const id=req.params.id
+    console.log(id);
+    let filteredData = userData.filter((user)=>user.id==id)
+    resp.send(filteredData)
+})
+app.listen(3200)
