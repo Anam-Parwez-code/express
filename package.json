@@ -1,0 +1,29 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "express",
+  "keywords": [
+    "0786"
+  ],
+  "homepage": "https://github.com/Anam-Parwez-code/express#readme",
+  "bugs": {
+    "url": "https://github.com/Anam-Parwez-code/express/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anam-Parwez-code/express.git"
+  },
+  "license": "ISC",
+  "author": "Anam Parwez",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "morgan": "^1.10.1",
+    "nodemon": "^3.1.11"
+  }
+}
